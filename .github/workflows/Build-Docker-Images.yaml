@@ -62,5 +62,5 @@ jobs:
           docker buildx build \
             --cache-from type=gha \
             --cache-to type=gha,mode=max \
-            --tag ghcr.io/myrenic/${{ matrix.service }}:$TAG \
+            --tag ghcr.io/mike-tuntelder/${{ matrix.service }}:$TAG \
             apps/${{ matrix.service }}/image \
