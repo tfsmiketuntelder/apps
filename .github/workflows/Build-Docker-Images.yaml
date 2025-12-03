@@ -63,4 +63,5 @@ jobs:
             --cache-from type=gha \
             --cache-to type=gha,mode=max \
             --tag ghcr.io/tfsmiketuntelder/${{ matrix.service }}:$TAG \
+            --push \
             apps/${{ matrix.service }}/image \
